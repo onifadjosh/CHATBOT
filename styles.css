@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+
+}
+
+:root{
+    --ff: 'Roboto'
+
+}
+
+.intro-page{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    /* height: 100vh; */
+    width: 100%;
+    background-image: url(1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 3em;
+    /* line-height: 5em; */
+
+}
+
+.signup{
+    background: transparent;
+    border: 1px solid #D57D96;
+    padding: .75em;
+    border-radius: .35em;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+    /* width: 21.8em; */
+    /* background-color: rgb(156, 71, 212); */
+}
+.content h2{
+    font-family: 'Roboto', sans-serif;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size:3.125em ;
+    /* line-height:2em ; */
+    color: #FEF3F6;
+}
+
+.content p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9375em;
+    line-height: 1.625em;
+    color: #FEF3F6;
+}
+
+.header h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25.9459px;
+    line-height: 52px;
+    color: #D57D96;
+
+}
+
+.header .signup{
+    font-family: sans-serif, 'Roboto';
+    color: #D57D96;
+    font-style: normal;
+    background: #17140F;
+
+}
+
+.install{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 9.185em;
+}
+
+.install >*{
+    background: #D57D96;
+    border: 2px solid #D57D96;
+    border-radius: 6px;
+    width: 9.375em;
+    height: 3.125em;
+}
+
+.section2{
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* .image{
+    width: 100%;
+  flex-basis: 40%;
+    background-image: url(keep.jpg);
+    background-position: center;
+    background-size: cover;
+ 
+    
+} */
+.image{
+    flex-basis: 40%;
+}
+
+.whispers{
+    width: 100%;
+
+    object-position: center;
+
+
+}
+.content2{
+    flex-basis: 60%;
+    background: linear-gradient(180deg, rgba(244, 219, 225, 0.98) 0%, rgba(241, 204, 211, 0.98) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.content2 h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1.5em;
+    
+    
+    
+}
+
+.content2 p{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 1.1em;
+line-height: 1.875em;
+/* or 144% */
+
+
+color: #0F0004;
+
+opacity: 0.8;
+padding-bottom: 1.875em;
+}
+
+.get{
+    border: 0.5px solid #0F0004;
+    border-radius: 6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 1.3em;
+    /* width: 10.25em; */
+    background-color: transparent;
+
+}
+
+.section3{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center ;
+    align-items: center;
+}
+
+.content3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.content3 h1{
+    font-family: 'Roboto' ;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4em;
+    line-height: 1em;
+
+
+    text-align: center;
+
+    color: #0F0004;
+    
+}
+
+.content3 p{
+    font-family: 'Roboto' ;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 55px;
+
+
+    text-align: center;
+
+    color: #0F0004;
+
+    
+}
+
+.section4{
+    max-width: 100%;
+    /* height: 100vh; */
+    padding: 5%;
+   
+}
+
+.follow {
+    grid-area: follow;
+}
+
+.info{
+    grid-area: info;
+}
+
+.email{
+    grid-area: email;
+}
+
+.keep  {
+    grid-area: keep;
+}
+
+.privacy{
+    grid-area: privacy;
+}
+
+.hiring{
+    grid-area: hiring ;
+}
+
+
+.content4{
+    display:grid;
+    gap: 10px;
+    grid-template-columns: 2fr 2fr 2fr 5fr;
+    grid-template-rows: 1fr 2fr 2fr ;
+    grid-template-areas:
+    "follow . . email"
+    "info privacy hiring keep"
+    "info . . . " ;
+}
+
+.section4{
+    font-family: var(--ff);
+    background-color: #000000;
+}
+
+
+
+.follow,.info, .privacy,.hiring{
+    font-family: var(--ff);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    color: #EDEAEA;   
+}
+
+.follow ul{
+    display: flex;
+    gap: 6px;
+}
+.fa-brands{
+    font-size:25px;
+    color:#D57D96;
+    background-color: aliceblue;
+    border-radius:5px;
+}
+
+
+div > ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+div>ul>li>a{
+    text-decoration: none;
+    color:  #EDEAEA;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+}
+  
+
+
+.info li{    
+  margin-bottom:15px ;
+}
+
+
+.privacy, .hiring{
+   justify-content: center;
+}
+.privacy li{
+    margin-bottom: 10px;
+}
+.hiring li{
+    margin-bottom: 10px;
+}
+
+.email{
+    font-family: var(--ff);
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.email h3{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #EDEAEA;
+}
+
+.email h2{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: -1.25px;
+    color: #D57D96;
+}
+
+.keep{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+.keep h3{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #EDEAEA;
+}
+
+.keep input{
+    padding: 10px;
+    border: 1px #D57D96 solid;
+    border-radius: 5px;
+    float: left;
+ 
+ width: 75%;
+ border-radius: 4px;
+ 
+ background-color:  #FFFFFF;
+ color: #858585;
+ border-top-right-radius: 0; 
+ border-bottom-right-radius: 0;
+ text-transform: capitalize;
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 400;
+ letter-spacing: -0.25px;
+
+}
+
+.keep button{
+    padding: 11px;
+    border: none;
+    border-radius: 5px;
+    background-color: #D57D96;
+    width:25% ;
+    float: left;
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.25px;  
+}
+
+/* hover properties for buttons */
+.transparent{
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.transparent:hover{
+    background-color:#D57D96;
+    color: white;
+    border: none;
+}
+
+.opaque{
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.opaque:hover{
+    background-color:transparent;
+    color: #D57D96;
+    border: none;
+}
+
+@media screen and (max-width: 600px) and (min-width: 280px) {
+    .opaque{margin-bottom: 10px;}
+    .section2{
+        flex-direction: column;
+    }
+    .content2{
+        padding: 2em;
+    }
+    .section3{
+        height: 70vh;
+    }
+    .content3 h1{
+        font-weight: 600;
+        font-size: 2em;
+        line-height: 1em;  
+    }
+    .content3 p{
+        font-size: 20px;
+    line-height: 30px; 
+    }
+    .content4{
+        display:flex;
+        flex-direction: column;   
+    }
+    
+  }
+
